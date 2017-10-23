@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Syncromatics.Clients.WaySine", "Syncromatics.Clients.WaySine\Syncromatics.Clients.WaySine.csproj", "{D4247012-A078-489A-BDD2-5D8D8B0698F3}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D0411F47-B19C-4EAC-B473-A9FBDF41D01B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Syncromatics.Clients.WaySine", "src\Syncromatics.Clients.WaySine\Syncromatics.Clients.WaySine.csproj", "{D4247012-A078-489A-BDD2-5D8D8B0698F3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D6E75FFB-700D-43E1-A7E6-A1FB9B92EDAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FF203349-19DC-4615-BE5A-98A3A057AF9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syncromatics.Clients.WaySine.IntegrationTests", "tests\Syncromatics.Clients.WaySine.IntegrationTests\Syncromatics.Clients.WaySine.IntegrationTests.csproj", "{4CA408E9-38C8-4626-969A-D3626BE73A74}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,12 +21,17 @@ Global
 		{D4247012-A078-489A-BDD2-5D8D8B0698F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4247012-A078-489A-BDD2-5D8D8B0698F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4247012-A078-489A-BDD2-5D8D8B0698F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CA408E9-38C8-4626-969A-D3626BE73A74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CA408E9-38C8-4626-969A-D3626BE73A74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CA408E9-38C8-4626-969A-D3626BE73A74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CA408E9-38C8-4626-969A-D3626BE73A74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{D4247012-A078-489A-BDD2-5D8D8B0698F3} = {D0411F47-B19C-4EAC-B473-A9FBDF41D01B}
+		{D4247012-A078-489A-BDD2-5D8D8B0698F3} = {FF203349-19DC-4615-BE5A-98A3A057AF9F}
+		{4CA408E9-38C8-4626-969A-D3626BE73A74} = {D6E75FFB-700D-43E1-A7E6-A1FB9B92EDAB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {60AC30EC-3781-47F3-87DA-4BAB54AEDA06}

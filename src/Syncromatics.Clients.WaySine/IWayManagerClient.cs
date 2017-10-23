@@ -20,6 +20,6 @@ namespace Syncromatics.Clients.WaySine
         /// </summary>
         /// <param name="id">The ID of the sign for which to query.</param>
         /// <returns>Sign status for the given <paramref name="signId"/></returns>
-        Task<ICollection<SignStatus>> GetSignAsync(int signId);
+        Task<SignStatus> GetSignAsync(int signId);
     }
 }

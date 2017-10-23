@@ -17,7 +17,7 @@ Then, create a `ClientSettings` object to specify your server's root URL and use
 ```csharp
 using Syncromatics.Client.WaySine;
 
-var clientSettings = new ClientSettings { ServerRootUrl = "http://example.com/" };
+var clientSettings = new ClientSettings(serverRootUrl: "http://example.com/");
 IWayManagerClient client = new WayManagerClient(clientSettings);
 
 // to get information about every sign available:
