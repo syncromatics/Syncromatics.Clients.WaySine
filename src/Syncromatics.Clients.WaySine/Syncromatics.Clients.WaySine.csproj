@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AssemblyName>Syncromatics.Clients.WaySine</AssemblyName>
+    <RootNamespace>Syncromatics.Clients.WaySine</RootNamespace>
+    <Authors>Apps team at Syncromatics</Authors>
+    <Company>Syncromatics Corporation</Company>
+    <Description>Client to access the WaySine WayManager API</Description>
   </PropertyGroup>
 
   <ItemGroup>

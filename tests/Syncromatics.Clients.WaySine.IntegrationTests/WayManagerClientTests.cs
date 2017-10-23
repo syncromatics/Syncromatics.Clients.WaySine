@@ -14,7 +14,7 @@ namespace Syncromatics.Clients.WaySine.IntegrationTests
             const string wayManagerEnvVar = "WAYMANAGER_ROOT_URL";
             var wayManagerRootUrl = Environment.GetEnvironmentVariable(wayManagerEnvVar);
             wayManagerRootUrl.Should()
-                .NotBeNull($"You must specify a root url as environment variable '{wayManagerEnvVar}' to run these tests");
+                .NotBeNull($"you must specify a root url as environment variable '{wayManagerEnvVar}' to run these tests");
 
             var clientSettings = new ClientSettings(serverRootUrl: wayManagerRootUrl);
             _subject = new WayManagerClient(clientSettings);
