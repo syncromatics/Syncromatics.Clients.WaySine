@@ -11,10 +11,21 @@ Add the `Syncromatics.Clients.WaySine` package to your project:
 dotnet add package Syncromatics.Clients.WaySine
 ```
 
-The use it to initialize a connection and get sign status updates:
+Then, create a `ClientSettings` object to specify your server's root URL and use it to initialize a
+`WayManagerClient`.
 
 ```csharp
-// TODO when there is a working library to document.
+using Syncromatics.Client.WaySine;
+
+var clientSettings = new ClientSettings { ServerRootUrl = "http://example.com/" };
+IWayManagerClient client = new WayManagerClient(clientSettings);
+
+// to get information about every sign available:
+var allSigns = await client.GetAllSignsAsync();
+
+// to get information about a particular sign:
+const int signId = 42;
+var onlyOneSign = await client.GetSignAsync(signId);
 ```
 
 ## Building
@@ -23,7 +34,7 @@ The use it to initialize a connection and get sign status updates:
 [![NuGet](https://img.shields.io/nuget/v/.svg)](https://www.nuget.org/packages//)
 [![NuGet Pre Release](https://img.shields.io/nuget/vpre/.svg)](https://www.nuget.org/packages//)
 
-Write a few sentences on how to set up a build environment for this software. These instructions should include prerequisites like required tools, frameworks, and libraries that the reader will need to successfully build this software.
+TODO: This library will be built using Cake.  Information to be added once build scripts are done.
 
 ## Code of Conduct
 
