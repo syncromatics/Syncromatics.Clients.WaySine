@@ -34,15 +34,16 @@ var onlyOneSign = await client.GetSignAsync(signId);
 [![NuGet](https://img.shields.io/nuget/v/.svg)](https://www.nuget.org/packages//)
 [![NuGet Pre Release](https://img.shields.io/nuget/vpre/.svg)](https://www.nuget.org/packages//)
 
-This library is built using Cake. To build and test:
+This library is built using Cake.
 
-If running on windows
+### Build and test on Windows
 
 ```
 build.ps1 -Experimental
 ```
 
-If Linux:
+### Build and test on Linux
+
 ```
 ./build.sh
 ```
