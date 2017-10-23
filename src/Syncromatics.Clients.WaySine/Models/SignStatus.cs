@@ -1,4 +1,5 @@
 ﻿using System;
+using Newtonsoft.Json;
 
 namespace Syncromatics.Clients.WaySine.Models
 {
@@ -10,7 +11,8 @@ namespace Syncromatics.Clients.WaySine.Models
         public int ID { get; set; }
         public string Link { get; set; }
         public double OpHrs { get; set; }
-        public long Polled { get; set; }
+        [JsonConverter(typeof(PolledDateTimeConverter))]
+        public DateTime? Polled { get; set; }
         public int Rows { get; set; }
         public double Solar { get; set; }
         public string Status { get; set; }
