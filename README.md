@@ -30,7 +30,7 @@ var onlyOneSign = await client.GetSignAsync(signId);
 
 ## Building
 
-[![Travis](https://img.shields.io/travis/Syncromatics/Syncromatics.Clients.WaySine.svg)](https://travis-ci.org/Syncromatics/Syncromatics.Clients.WaySine)
+[![Travis](https://img.shields.io/travis/syncromatics/Syncromatics.Clients.WaySine.svg)](https://travis-ci.org/syncromatics/Syncromatics.Clients.WaySine)
 [![NuGet](https://img.shields.io/nuget/v/Syncromatics.Clients.WaySine.svg)](https://www.nuget.org/packages/Syncromatics.Clients.WaySine/)
 [![NuGet Pre Release](https://img.shields.io/nuget/vpre/Syncromatics.Clients.WaySine.svg)](https://www.nuget.org/packages/Syncromatics.Clients.WaySine/)
 
