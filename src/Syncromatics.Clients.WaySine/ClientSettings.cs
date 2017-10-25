@@ -8,7 +8,14 @@ namespace Syncromatics.Clients.WaySine
         /// <summary>
         /// The root URL to use to connect to the WayManager API.
         /// </summary>
-        public readonly string ServerRootUrl;
+        public string ServerRootUrl { get; set; }
+
+        /// <summary>
+        /// Creates a new ClientSettings instance.
+        /// </summary>
+        public ClientSettings()
+        {
+        }
 
         /// <summary>
         /// Creates a new ClientSettings instance.
@@ -16,10 +23,6 @@ namespace Syncromatics.Clients.WaySine
         /// <param name="serverRootUrl">The root URL to use to connect to the WayManager API.</param>
         public ClientSettings(string serverRootUrl)
         {
-            if (string.IsNullOrWhiteSpace(serverRootUrl))
-            {
-                throw new ArgumentNullException(nameof(serverRootUrl));
-            }
             ServerRootUrl = serverRootUrl;
         }
     }
