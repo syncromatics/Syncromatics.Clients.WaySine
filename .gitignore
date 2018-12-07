@@ -3,12 +3,14 @@
 /**/packages/
 /**/bin/
 /**/obj/
+
+.idea
+.vs
+.vscode
+
 _site
 artifacts
 tools/*
 tools-container
 !tools/packages.config
-.vs
-.vscode
 *.nupkg
-
