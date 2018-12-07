@@ -32,7 +32,7 @@ namespace Syncromatics.Clients.WaySine.IntegrationTests
         [Fact]
         public async Task Can_get_single_sign()
         {
-            const int signId = 640;
+            const int signId = 643;
             var singleSign = await _subject.GetSignAsync(signId);
 
             singleSign.Should().NotBeNull();
