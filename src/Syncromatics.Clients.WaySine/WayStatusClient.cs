@@ -25,7 +25,7 @@ namespace Syncromatics.Clients.WaySine
                 serverRootUrl = serverRootUrl.Substring(0, serverRootUrl.Length - UrlSuffix.Length);
             }
 
-            _api = RestClient.For<IWayStatusApi>(clientSettings.ServerRootUrl);
+            _api = RestClient.For<IWayStatusApi>(serverRootUrl);
         }
 
         public async Task<ICollection<Sign>> GetAllSignsAsync()
