@@ -20,7 +20,7 @@ namespace Syncromatics.Clients.WaySine
             }
 
             var serverRootUrl = clientSettings.ServerRootUrl;
-            if (serverRootUrl.ToLower().EndsWith(UrlSuffix.ToLower()))
+            if (serverRootUrl.EndsWith(UrlSuffix, StringComparison.CurrentCultureIgnoreCase))
             {
                 serverRootUrl = serverRootUrl.Substring(0, serverRootUrl.Length - UrlSuffix.Length);
             }
