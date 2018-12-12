@@ -15,8 +15,11 @@ namespace Syncromatics.Clients.WaySine.Models
         // so the deserializer assumes it is in system local time.  This
         // gets rid of the added timezone.
         [JsonIgnore]
-        public DateTimeOffset UtcTimeStamp =>
-            _utcTimeStamp.Add(_utcTimeStamp.Offset);
+        public DateTimeOffset UtcTimeStamp
+        {
+            get => _utcTimeStamp.Add(_utcTimeStamp.Offset);
+            set => _utcTimeStamp = value.ToUniversalTime();
+        }
 
         public double SolarVoltage { get; set; }
         public double BatteryVoltage { get; set; }
