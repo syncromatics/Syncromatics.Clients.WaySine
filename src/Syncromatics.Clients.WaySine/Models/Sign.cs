@@ -17,7 +17,7 @@ namespace Syncromatics.Clients.WaySine.Models
         [JsonIgnore]
         public DateTimeOffset UtcTimeStamp
         {
-            get => _utcTimeStamp.Add(_utcTimeStamp.Offset);
+            get => _utcTimeStamp.ToOffset(TimeSpan.Zero).Add(_utcTimeStamp.Offset);
             set => _utcTimeStamp = value.ToUniversalTime();
         }
 
