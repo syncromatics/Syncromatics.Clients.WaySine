@@ -29,5 +29,8 @@ namespace Syncromatics.Clients.WaySine.Models
         public int CellLinkStrength { get; set; }
         [JsonProperty("StopID")]
         public string StopId { get; set; }
+        public string StopName { get; set; }
+        public int? Rows { get; set; }
+        public int? Characters { get; set; }
     }
 }
